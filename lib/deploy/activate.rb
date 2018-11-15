@@ -44,7 +44,7 @@ module Deploy
         region: ec2_data.region,
         logger: logger,
         s3_client: s3_client
-      ).download_configs('/commmon/GeoLite2-City.mmdb' => geolocation_db_path)
+      ).download_configs('/common/GeoLite2-City.mmdb' => geolocation_db_path)
     end
 
     def ec2_data
